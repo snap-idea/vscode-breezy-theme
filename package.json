@@ -1,0 +1,48 @@
+{
+  "name": "breezy-skin-theme",
+  "displayName": "Breezy Skin",
+  "description": "Breezy (有风) color themes for VS Code — light and dark, ported from the breezy-skin palette.",
+  "version": "0.1.0",
+  "publisher": "snap-idea",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "light",
+    "dark",
+    "green",
+    "nature",
+    "breezy",
+    "workbuddy"
+  ],
+  "icon": "./icon.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snap-idea/dsh-breezy-skin.git"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Workbuddy Breezy Light",
+        "uiTheme": "vs",
+        "path": "./themes/breezy-light-color-theme.json"
+      },
+      {
+        "label": "Workbuddy Breezy Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/breezy-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "gen": "python3 scripts/gen-theme.py",
+    "audit": "python3 scripts/audit-theme.py",
+    "verify": "npm run gen && npm run audit"
+  }
+}

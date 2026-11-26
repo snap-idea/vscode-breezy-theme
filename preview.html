@@ -1,0 +1,105 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<title>breezy-skin · VS Code 主题预览</title>
+<style>
+ body{margin:0;padding:26px 30px;background:#6b7370;
+   font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+ h1{color:#fff;font-size:18px;margin:0 0 4px}
+ p.sub{color:#dfe6e2;font-size:13px;margin:0 0 20px}
+ .row{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+</style></head><body>
+<h1>breezy-skin · VS Code 主题预览</h1>
+<p class="sub">用生成的主题文件里的真实色值渲染，非手工取色</p>
+<div class="row">
+<div style="border-radius:10px;overflow:hidden;border:1px solid #eff6f0;
+     box-shadow:0 8px 24px rgba(0,0,0,.16);background:#ffffff">
+  <div style="background:#e3ece4;color:#2f4938c5;
+       padding:6px 12px;font-size:12px;border-bottom:1px solid #eff6f0;
+       display:flex;justify-content:space-between">
+    <span>Breezy Light — breezy-skin</span><span>● ● ●</span></div>
+  <div style="display:flex">
+    <div style="background:#e3ece4;display:flex;flex-direction:column"><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#2f4938e6;border-left:2px solid #2e6943">◧</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#2f493899;border-left:2px solid transparent">⌕</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#2f493899;border-left:2px solid transparent">⑂</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#2f493899;border-left:2px solid transparent">▤</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#2f493899;border-left:2px solid transparent">⚙</div></div>
+    <div style="background:#e3ece4;width:210px;padding:8px 6px;
+         border-right:1px solid #eff6f0"><div style="padding:3px 10px 3px 10px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">▾ breezy-skin</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">  src</div><div style="padding:3px 10px 3px 38px;background:#cee3d0;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">    index.js</div><div style="padding:3px 10px 3px 38px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">    brand.js</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">  themes</div><div style="padding:3px 10px 3px 38px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">    breezy-light…</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#2f4938e6;border-radius:4px;font-size:12.5px;white-space:nowrap">  package.json</div></div>
+    <div style="flex:1;min-width:0">
+      <div style="display:flex;background:#e3ece4"><div style="padding:7px 14px;background:#ffffff;color:#2f4938e6;border-top:2px solid #2e6943;font-size:12.5px;border-right:1px solid #eff6f0">index.js</div><div style="padding:7px 14px;background:#e3ece4;color:#2f4938c5;border-top:2px solid transparent;font-size:12.5px;border-right:1px solid #eff6f0">brand.js</div><div style="padding:7px 14px;background:#e3ece4;color:#2f4938c5;border-top:2px solid transparent;font-size:12.5px;border-right:1px solid #eff6f0">breezy-light…</div></div>
+      <div style="background:#ffffff;color:#2f4938e6;
+           display:flex">
+        <div style="background:#ffffff;color:#2f493899;
+             padding:14px 8px;text-align:right;font:12px/1.65 ui-monospace,monospace;user-select:none">
+          1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+        <div style="flex:1;min-width:0"><div style="padding:14px 16px;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace">
+<div style="color:#5f7362">// 由 src/theme.css 的调色板生成</div>
+<div><span style="color:#21472b">import</span> { buildBrandScript } <span style="color:#21472b">from</span> <span style="color:#4f7a2e">'./brand.js'</span>;</div>
+<div>&nbsp;</div>
+<div><span style="color:#21472b">const</span> <span style="color:#3d5a46">SKIN</span> <span style="color:#4a5f4f">=</span> <span style="color:#4f7a2e">'breezy'</span>;</div>
+<div><span style="color:#21472b">export function</span> <span style="color:#2e6943">apply</span>(<span style="color:#3d5a46">ctx</span>) {</div>
+<div>&nbsp;&nbsp;<span style="color:#21472b">if</span> (<span style="color:#3d5a46">ctx</span>.<span style="color:#2e6943">name</span> <span style="color:#4a5f4f">!==</span> <span style="color:#4f7a2e">'web'</span>) <span style="color:#21472b">return</span>;</div>
+<div>&nbsp;&nbsp;<span style="color:#21472b">const</span> <span style="color:#3d5a46">tokens</span> <span style="color:#4a5f4f">=</span> <span style="color:#8a5a2b">107</span>;</div>
+<div>&nbsp;&nbsp;<span style="color:#21472b">return new</span> <span style="color:#1f6f6a">Promise</span>(<span style="color:#3d5a46">resolve</span> <span style="color:#4a5f4f">=&gt;</span> <span style="color:#2e6943">resolve</span>(<span style="color:#3d5a46">tokens</span>));</div>
+<div>}</div>
+</div>
+<div style="padding:0 16px 12px;font:12.5px ui-monospace,monospace">
+<div style="color:#5f7362">// ── 语义 / 状态色 ──</div>
+<div><span style="color:#b83c3c">✗ error</span>&nbsp;&nbsp;<span style="color:#357a43">✓ success</span>&nbsp;&nbsp;<span style="color:#8f5c12">● warn</span>&nbsp;&nbsp;<span style="color:#2e6943">↗ link</span></div>
+</div></div>
+      </div>
+      <div style="background:#f5faf6;color:#2f4938e6;
+           border-top:1px solid #eff6f0;padding:6px 12px;font-size:12px">
+        <span style="border-bottom:2px solid #2e6943;padding-bottom:4px">终端</span>
+        <span style="color:#2f4938e6;font-family:ui-monospace,monospace;margin-left:12px;font-size:11.5px">
+          $ npm run verify <span style="color:#357a43">✓ 全部通过</span></span>
+      </div>
+    </div>
+  </div>
+  <div style="background:#e3ece4;color:#2f4938c5;
+       padding:4px 12px;font-size:11.5px;display:flex;gap:14px;justify-content:space-between">
+    <span>⑂ main　✓ 0　⚠ 0</span>
+    <span>Breezy Light　UTF-8　LF　JavaScript</span></div>
+</div>
+<div style="border-radius:10px;overflow:hidden;border:1px solid rgba(224, 233, 226, 0.08);
+     box-shadow:0 8px 24px rgba(0,0,0,.16);background:#171b18">
+  <div style="background:#121613;color:#e0e9e2c5;
+       padding:6px 12px;font-size:12px;border-bottom:1px solid rgba(224, 233, 226, 0.08);
+       display:flex;justify-content:space-between">
+    <span>Breezy Dark — breezy-skin</span><span>● ● ●</span></div>
+  <div style="display:flex">
+    <div style="background:#121613;display:flex;flex-direction:column"><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#e0e9e2;border-left:2px solid #79cd94">◧</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#e0e9e299;border-left:2px solid transparent">⌕</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#e0e9e299;border-left:2px solid transparent">⑂</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#e0e9e299;border-left:2px solid transparent">▤</div><div style="width:34px;height:34px;display:grid;place-items:center;font-size:15px;color:#e0e9e299;border-left:2px solid transparent">⚙</div></div>
+    <div style="background:#121613;width:210px;padding:8px 6px;
+         border-right:1px solid rgba(224, 233, 226, 0.08)"><div style="padding:3px 10px 3px 10px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">▾ breezy-skin</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">  src</div><div style="padding:3px 10px 3px 38px;background:#26312a;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">    index.js</div><div style="padding:3px 10px 3px 38px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">    brand.js</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">  themes</div><div style="padding:3px 10px 3px 38px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">    breezy-light…</div><div style="padding:3px 10px 3px 24px;background:transparent;color:#e0e9e2;border-radius:4px;font-size:12.5px;white-space:nowrap">  package.json</div></div>
+    <div style="flex:1;min-width:0">
+      <div style="display:flex;background:#121613"><div style="padding:7px 14px;background:#171b18;color:#e0e9e2;border-top:2px solid #79cd94;font-size:12.5px;border-right:1px solid rgba(224, 233, 226, 0.08)">index.js</div><div style="padding:7px 14px;background:#121613;color:#e0e9e2c5;border-top:2px solid transparent;font-size:12.5px;border-right:1px solid rgba(224, 233, 226, 0.08)">brand.js</div><div style="padding:7px 14px;background:#121613;color:#e0e9e2c5;border-top:2px solid transparent;font-size:12.5px;border-right:1px solid rgba(224, 233, 226, 0.08)">breezy-light…</div></div>
+      <div style="background:#171b18;color:#e0e9e2;
+           display:flex">
+        <div style="background:#171b18;color:#e0e9e299;
+             padding:14px 8px;text-align:right;font:12px/1.65 ui-monospace,monospace;user-select:none">
+          1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+        <div style="flex:1;min-width:0"><div style="padding:14px 16px;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace">
+<div style="color:#7d9182">// 由 src/theme.css 的调色板生成</div>
+<div><span style="color:#79cd94">import</span> { buildBrandScript } <span style="color:#79cd94">from</span> <span style="color:#9ec97a">'./brand.js'</span>;</div>
+<div>&nbsp;</div>
+<div><span style="color:#79cd94">const</span> <span style="color:#c8d8cc">SKIN</span> <span style="color:#9fb3a4">=</span> <span style="color:#9ec97a">'breezy'</span>;</div>
+<div><span style="color:#79cd94">export function</span> <span style="color:#86d69f">apply</span>(<span style="color:#c8d8cc">ctx</span>) {</div>
+<div>&nbsp;&nbsp;<span style="color:#79cd94">if</span> (<span style="color:#c8d8cc">ctx</span>.<span style="color:#86d69f">name</span> <span style="color:#9fb3a4">!==</span> <span style="color:#9ec97a">'web'</span>) <span style="color:#79cd94">return</span>;</div>
+<div>&nbsp;&nbsp;<span style="color:#79cd94">const</span> <span style="color:#c8d8cc">tokens</span> <span style="color:#9fb3a4">=</span> <span style="color:#e0a556">107</span>;</div>
+<div>&nbsp;&nbsp;<span style="color:#79cd94">return new</span> <span style="color:#6ec5b8">Promise</span>(<span style="color:#c8d8cc">resolve</span> <span style="color:#9fb3a4">=&gt;</span> <span style="color:#86d69f">resolve</span>(<span style="color:#c8d8cc">tokens</span>));</div>
+<div>}</div>
+</div>
+<div style="padding:0 16px 12px;font:12.5px ui-monospace,monospace">
+<div style="color:#7d9182">// ── 语义 / 状态色 ──</div>
+<div><span style="color:#f57272">✗ error</span>&nbsp;&nbsp;<span style="color:#acdeba">✓ success</span>&nbsp;&nbsp;<span style="color:#e0a556">● warn</span>&nbsp;&nbsp;<span style="color:#79cd94">↗ link</span></div>
+</div></div>
+      </div>
+      <div style="background:#1f2420;color:#e0e9e2;
+           border-top:1px solid rgba(224, 233, 226, 0.08);padding:6px 12px;font-size:12px">
+        <span style="border-bottom:2px solid #79cd94;padding-bottom:4px">终端</span>
+        <span style="color:#e0e9e2;font-family:ui-monospace,monospace;margin-left:12px;font-size:11.5px">
+          $ npm run verify <span style="color:#acdeba">✓ 全部通过</span></span>
+      </div>
+    </div>
+  </div>
+  <div style="background:#121613;color:#e0e9e2c5;
+       padding:4px 12px;font-size:11.5px;display:flex;gap:14px;justify-content:space-between">
+    <span>⑂ main　✓ 0　⚠ 0</span>
+    <span>Breezy Dark　UTF-8　LF　JavaScript</span></div>
+</div></div>
+</body></html>

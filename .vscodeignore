@@ -1,0 +1,7 @@
+# 打包成 vsix 时排除开发用文件
+scripts/**
+palette.json
+preview.html
+.gitignore
+.vscodeignore
+**/*.map
